@@ -140,15 +140,6 @@ export default function LoginPage() {
               </button>
             </form>
 
-            {/* Quick access hint */}
-            <div className="mt-4 p-3 rounded-xl bg-slate-50 border border-slate-200 dark:bg-slate-800/50 dark:border-slate-700">
-              <p className="text-xs text-slate-500 dark:text-slate-400">
-                <span className="font-semibold text-slate-600 dark:text-slate-300">Demo access:</span>
-              </p>
-              <p className="text-xs text-slate-400 mt-0.5 dark:text-slate-500">Admin: 0241csiot028@niet.co.in / admin123</p>
-              <p className="text-xs text-slate-400 dark:text-slate-500">Student: student@niet.co.in / student123</p>
-            </div>
-
             <p className="mt-6 text-center text-sm text-slate-500 dark:text-slate-400">
               Don't have an account?{' '}
               <Link to="/register" className="text-primary-700 hover:text-primary-600 font-medium transition-colors dark:text-primary-400 dark:hover:text-primary-300" id="register-link">Create one</Link>
