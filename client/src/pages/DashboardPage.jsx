@@ -21,11 +21,12 @@ export default function DashboardPage() {
   const [stats, setStats] = useState({ totalItems: 0, resolvedItems: 0, activeItems: 0 });
 
   // Fetch public stats for hero section
-  useEffect(() => {
-    axios.get('http://localhost:5000/api/stats/public')
-      .then((res) => setStats(res.data))
-      .catch(() => {});
-  }, []);
+ useEffect(() => {
+  // Use your live Render URL here
+  axios.get('https://university-lost-and-found.onrender.com/api/stats/public')
+    .then((res) => setStats(res.data))
+    .catch((err) => console.error("Stats fetch error:", err));
+}, []);
 
   const fetchItems = useCallback(async () => {
     setLoading(true);
